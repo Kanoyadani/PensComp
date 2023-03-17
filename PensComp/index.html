@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PensComp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="topo">
+        <div id="but">
+          <form action="./index.html" >
+            <input type="submit" value="Home" class="sidebar">
+          </form>
+
+          <form action="./liukas.html" class="sidebar">
+            <input type="submit" value="Liukas" class="sidebar">
+          </form>
+
+          <form action="./opiniao.html" class="sidebar">
+            <input type="submit" value="Opiniões" class="sidebar">
+          </form>
+        </div>
+
+        <h1 id="titulo">Pensamento Computacional </h1>
+
+        <a
+          href="https://www.brazcubas.edu.br/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            id="logo"
+            src="data:image/png;base64,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"
+            alt="logoetec"
+        /></a>
+      </div>
+    </header>
+
+    <section>
+      <div id="tudo-content">
+        <div id="video">
+          <div id="content-video">
+           <img src="./Monstro1.jpg" alt="m1" class="imagem">
+           <img src="./Monstro2.jpg" alt="m2" class="imagem">
+           <img src="./Monstro3.jpg" alt="m3" class="imagem">
+          </div>
+          
+          </label>
+        </div>
+
+        <div class="container">
+          <div class="itens">
+            <div class="item active">
+             
+                
+                <h2>1° - Decomposição</h2>
+                <p>Decomposição seria usada da seguinte forma: o que precisa ser feito para criar o monstro? As crianças vão classificar os monstros pelo formato do rosto, procurar semelhanças nos monstros, fazer uma lista de características a serem identificadas e usar as características identificadas para criar um novo monstro.                </p>
+              </div> 
+              
+              
+            <div class="item">
+              <h2>2° - Abstração</h2>
+              <p>A Abstração seria usada para identificar as diferenças entre os monstros e criar uma lista com todas as características diferentes entre eles.</p>
+            </div>
+            <div class="item"><h2>3° - Reconhecimento de padrão</h2>
+              <p>O padrão seria analisar se todos os monstros têm cabeças, olhos e outras características.</p>
+            </div>
+            <div class="item"><h2>4° - Algoritimo</h2>
+            <p>Por fim, o Algoritmo seria usado para criar uma série de instruções que podem ser seguidas pelos colegas de classe, como desenhar uma cabeça, olhos, nariz, orelhas e boca.</p></div>
+            
+          
+          </div>
+
+          <div id="trade">
+            <div id="lf">
+              <button>
+                <img
+                  id="cima"
+                  src="https://cdn-icons-png.flaticon.com/128/507/507257.png"
+                  alt=""
+                />
+              </button>
+            </div>
+
+            <div id="rt">
+              <button>
+                <img
+                  id="baixo"
+                  src="https://cdn-icons-png.flaticon.com/128/271/271226.png"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="tudo-video">
+        <div id="conteudo">
+          <div id="resumo">
+            <h2>Sobre o Estudo</h2>
+            <p>O pensamento computacional começará a ser ensinado nas escolas para crianças graças a Jeannette Wing. Mas como isso será ensinado? Cada grupo receberá um catálogo de monstros e cada monstro precisará ser classificado de acordo com as informações atribuídas a ele no catálogo. Primeiro, os alunos analisarão os monstros para ver o que todos eles têm em comum e, em seguida, abstrairão as diferenças para criar uma lista de instruções que podem ser usadas por todos para recriar um dos monstros do catálogo, sem saber de antemão qual está sendo feito!</p>
+          </div>
+        </div>
+
+        <div id="contatos">
+          <li>
+            <ol>
+              <a href="https://www.youtube.com/watch?v=TO44lRr0LOA&t=239s">Precisamos de metodologias emocionais?</a>
+            </ol>
+            <ol>
+              <a
+                href="https://www.youtube.com/watch?v=du8Ylq2Zy0c"
+                >Competências digitais no contexto do Referencial </a
+              >
+            </ol>
+
+            <ol>
+              <a href="http://lindaliukas.com/"
+                >Liukas</a
+              >
+            </ol>
+          </li>
+
+          <br />
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <hr />
+    <footer>
+      <div id="rodape">
+        <p>
+          Nome: Rodrigo Ryudi Kanoyadani; RGM:32972814 Email:
+          rodrigokanoyadani1@gmail.com;
+        </p>
+        <p>Lucas Sabino de Carvalho; RGM: 33676127 ;lucascopa2013@gmail.com</p>
+        <p>
+          Bruno Mingorance da Silva Faria; RGM: 33941882;
+          brunomingorance011@gmail.com
+        </p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
